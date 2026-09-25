@@ -7,20 +7,47 @@ html, body{
 .header{
     background-color: #BAE5FA;
     text-align: center;
-    width: auto;
-}
-.header img {
-    max-width: 100%; 
-    height: auto;     
-    display: block;  
-    margin: 0 auto;
 }
 
+
+.menu{
+    background-color: #E1AA53;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    
+}
+.menu button{
+    background-color: #E1AA53;
+    color: rgb(248, 247, 247);
+    font-size: 15px;
+    font-weight: bold;
+    padding: 12px;
+    border: none;
+    width: auto;
+    cursor: pointer;
+   
+}
+.menu button:hover{
+    background-color: #916e35;
+    
+}
+@media  screen and (max-width: 600px){
+    .menu{
+        flex-direction:column;
+    }
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.colunas{
+    display: flex;
+}
 .coluna{
     background-color: #cdeaff;
     flex: 0.15;
-    padding: 0px;
-    text-align: center;
+    padding: 20px;
     
 }
 .coluna2{
@@ -29,79 +56,31 @@ html, body{
     padding: 20px;
     color:#b48843
 }
-.colunas{
-    display: flex;
-    
-}
-.menu{
-    background-color: #E1AA53;
-    margin: 0;
-    text-align: center;
-    display: flex;
-    
-}
 .footer{
     background-color:#E1AA53;
+;
     padding: 20px;
     text-align: center;
     font-size: 14px;
     color: black;
     
 }
-.coluna2 button{
-  background-color: #b48843;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  width: 20%;
-
+.coluna a:link{
+    color: #355a6c;
+    background-color: transparent;
+    text-decoration: none;
+   
 }
-.coluna2 button:hover{
-    background-color: #916e35;
+.coluna{
+    color:#355a6c;
 }
-.coluna2 input {
-  margin-bottom: 20px;
-}
-
-.coluna2 label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: bold;
-  color: #b48843;
-  font-size: 14px;
-}
-.coluna img{
-    width: 100%;
-    min-height: 55vh;
-
-}
-.coluna2 textarea{
-    width: 99%;
-    height: 190px;
-    resize:none;
-}
-
-@media  screen and (max-width: 600px){
-    .colunas{
-        flex-direction: row;
-    }
-}
-.footer a:link{
-  color: rgb(152, 114, 74);
-  text-decoration: none;
-}
-table, th, td{
-    border: 1px solid #b48843;
-    border-collapse: collapse;
-    color: #b48843;
+   
+.coluna h2{
+    color: #355a6c;
     text-align: center;
-    
 }
-th, td{
-    background-color: #f8e0a2;
+a{
+    color: rgb(152, 114, 74);
+    text-decoration: none;
 }
-thead th{
-    width: 10%;
-}
+

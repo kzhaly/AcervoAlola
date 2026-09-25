@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="icon" href="./imgs/icon.webp">
+    <link rel="stylesheet" href="feed.css">
+    
+</head>
+<body>
+    
+        <div class="header">
+            <img src="./imgs/headr.png" alt="Cabeçalho Acervo Alola">
+        </div>
+
+        <div class="menu">
+            <hr>
+        </div>
+
+        <div class="colunas">
+            <div class="coluna">
+                <img src="imgs/coluna.png">
+
+            </div>
+
+            <div class="coluna2">
+                <h2>Nos de sua opnião!</h2>
+                
+                <form action="https://httpbin.org/post" method="post">
+                
+                    <label for="nomef">Nome:</label>
+                    <input type="text" id="nomef" name="nomef" required> <br>
+                    <p><b>Gênero:</b></p>
+                    <select name="gender" id="gender">
+                        <option>Feminino</option>
+                        <option>Masculino</option>
+                        <option>Outro</option>
+                        <option>Prefiro não informar</option>
+                    </select><br><br>
+            
+                    
+                    
+             <table class="tabela">  
+                <thead>
+                    <tr>
+                        <th>---</th>
+                        <th>Bom</th>
+                        <th>Neutro</th>
+                        <th>Ruim</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Estetica do site</td>
+                        <td><input type="radio" class="bom" id="bom" name="estetica"></td>
+                        <td><input type="radio" class="neutro" id="bom" name="estetica"></td>
+                        <td><input type="radio" class="ruim" id="ruim" name="estetica"></td>
+                    </tr>
+                    <tr>
+                        <td>Conteúdo</td>
+                        <td><input type="radio" class="bom" id="bom" name="cont"></td>
+                        <td><input type="radio" class="neutro" id="bom" name="cont"></td>
+                        <td><input type="radio" class="ruim" id="ruim" name="cont"></td>
+                    </tr>
+                    <tr>
+                        <td>Funcionalidade</td>
+                        <td><input type="radio" class="bom" id="bom" name="fun"></td>
+                        <td><input type="radio" class="neutro" id="bom" name="fun"></td>
+                        <td><input type="radio" class="ruim" id="ruim" name="fun"></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Sua opnião importa muito!</td>
+                    </tr>
+                </tfoot>
+            </table>
+                <br>
+                <label for="detalhe">Nos diga mais:</label> 
+                <textarea type="text" id="detalhe" name="detalhe"></textarea><br><br>
+                <button type="submit">Enviar</button>
+                </form>
+            
+            </div>
+
+            <div class="coluna">
+                <img src="imgs/coluna.png">
+            </div>
+        </div>
+        <div class="footer">
+            <p style="color: rgb(152, 114, 74);"><a>Fale conosco!</p></a>
+            <p style="color: rgb(152, 114, 74);"><a>Deixe seu Feedback</p></a>
+            <p style="color: rgb(152, 114, 74);">&copy; 2026 Acervo Alola. Todos os direitos reservados.</p>
+        </div>
+    </div>
+</body>
+</html>
